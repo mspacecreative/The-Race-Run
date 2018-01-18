@@ -7,15 +7,15 @@ function halfViewportWidth() {
 	$('.carousel-1, .carousel-2, .carousel-3, .carousel-4').css('width',half);
 }
 
-function halfViewportHeight() {
-	var half = parseInt($(window).outerHeight()) / 2;
-	$('.carousel-1, .carousel-2, .carousel-3, .carousel-4').css('height',half);
-}
+//function halfViewportHeight() {
+//	var half = parseInt($(window).outerHeight()) / 2;
+//	$('.carousel-1, .carousel-2, .carousel-3, .carousel-4').css('height',half);
+//}
 
 $(document).ready(function () {
 	viewportHeight();
 	halfViewportWidth();
-	halfViewportHeight();
+	//halfViewportHeight();
 	$('.carousel').slick({
 	  autoplay: true,
 	  fade: true,
@@ -38,5 +38,5 @@ $(document).ready(function () {
 $(window).resize(function () {
 	viewportHeight();
 	halfViewportWidth();
-	halfViewportHeight();
+	//halfViewportHeight();
 });
