@@ -79,11 +79,21 @@ body, html {
 	padding: 0 12px;
 }
 
-@media (max-width: 812px) {
+@media (max-width: 812px) and (orientation: portrait) {
 
 .logo {
 	width: 60%;
 }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+
+.logo {
+	width: 200px;
+}
+}
+
+@media (max-width: 812px) {
 
 .logo img {
 	padding: 0 5px;
